@@ -12,6 +12,7 @@ io.on('connection', socket => {
     });
 
     socket.on('update-score-game', data => {
+        console.log(data)
         socket.emit('update-game', data)
     })
 })
